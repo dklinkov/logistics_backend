@@ -1,0 +1,10 @@
+version: '3.10'
+
+
+services:
+  django:
+    image: vilion_logistic_backend:0.1
+    build: .
+    env_file: .env
+    ports:
+      - "8001:8001"
