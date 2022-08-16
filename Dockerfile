@@ -21,9 +21,9 @@ COPY . .
 
 EXPOSE 8001
 
-CMD ["python","vilion_logistics/manage.py","makemigrations","logistics"]
+CMD ["python","logistics_backend/manage.py","makemigrations","logistics"]
 
-CMD ["python","vilion_logistics/manage.py","migrate","logistics"]
+CMD ["python","logistics_backend/manage.py","migrate","logistics"]
 
-CMD ["python","vilion_logistics/manage.py","runserver","0.0.0.0:8001"]
+CMD ["python","logistics_backend/manage.py","runserver","0.0.0.0:8001"]
 
